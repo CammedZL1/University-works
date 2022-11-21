@@ -67,8 +67,19 @@
     <Compile Include="Books.Designer.cs">
       <DependentUpon>Books.cs</DependentUpon>
     </Compile>
+    <Compile Include="LibraryDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TakeBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TakeBooks.Designer.cs">
+      <DependentUpon>TakeBooks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visitors.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +98,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TakeBooks.resx">
+      <DependentUpon>TakeBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visitors.resx">
+      <DependentUpon>Visitors.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LibraryDBDataSet.xsc">
+      <DependentUpon>LibraryDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryDBDataSet.xss">
+      <DependentUpon>LibraryDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

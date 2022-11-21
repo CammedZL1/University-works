@@ -63,11 +63,12 @@
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.addBookToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.addVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.takeBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -344,42 +345,44 @@
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
             this.addToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
             // 
-            // tabControl1
+            // menuStrip1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1172, 19);
-            this.tabControl1.TabIndex = 32;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addBookToolStripMenuItem1,
+            this.addVisitorToolStripMenuItem,
+            this.takeBookToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1196, 24);
+            this.menuStrip1.TabIndex = 32;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // tabPage1
+            // addBookToolStripMenuItem1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1164, 0);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Add Book";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.addBookToolStripMenuItem1.Name = "addBookToolStripMenuItem1";
+            this.addBookToolStripMenuItem1.Size = new System.Drawing.Size(71, 20);
+            this.addBookToolStripMenuItem1.Text = "Add Book";
             // 
-            // tabPage2
+            // addVisitorToolStripMenuItem
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(385, 0);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Add Visitor";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.addVisitorToolStripMenuItem.Name = "addVisitorToolStripMenuItem";
+            this.addVisitorToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.addVisitorToolStripMenuItem.Text = "Add visitor";
+            this.addVisitorToolStripMenuItem.Click += new System.EventHandler(this.addVisitorToolStripMenuItem_Click);
             // 
-            // Form1
+            // takeBookToolStripMenuItem
+            // 
+            this.takeBookToolStripMenuItem.Name = "takeBookToolStripMenuItem";
+            this.takeBookToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.takeBookToolStripMenuItem.Text = "Take Book";
+            this.takeBookToolStripMenuItem.Click += new System.EventHandler(this.takeBookToolStripMenuItem_Click);
+            // 
+            // Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1196, 692);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label14);
@@ -409,11 +412,13 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Books";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -455,9 +460,10 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem addBookToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem addBookToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem addVisitorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem takeBookToolStripMenuItem;
     }
 }
 

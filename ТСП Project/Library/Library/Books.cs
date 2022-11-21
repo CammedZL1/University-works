@@ -98,6 +98,11 @@ namespace Library
             Command.Parameters.AddWithValue("@genre", comboBox3.Text);
             Command.ExecuteNonQuery();
             Connection.Close();
+            //clear textboxes
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
             comboBox1.Items.Clear();
             comboBox2.Items.Clear();
 
@@ -160,6 +165,19 @@ namespace Library
             Connection.Close();
 
             UpdateDataGrid();
+        }
+
+        private void addVisitorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //on add visitor menu item click, open add visitor form
+            var addVisitor = new Visitors();
+            addVisitor.Show();
+        }
+
+        private void takeBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var takeBook = new TakeBooks();
+            takeBook.Show();
         }
     }
 }
