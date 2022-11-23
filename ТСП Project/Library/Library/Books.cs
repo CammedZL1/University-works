@@ -19,7 +19,7 @@ namespace Library
         }
 
         public string ConnectionString =
-            "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\chavd\\Documents\\Projects\\VisualStudioProjects\\Library\\Library\\LibraryDB.mdf;Integrated Security=True";
+            "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\chavd\\Documents\\Projects\\VSProjects\\Library\\Library\\LibraryDB.mdf;Integrated Security=True";
 
         public SqlConnection Connection;
         public SqlCommand Command;
@@ -178,6 +178,12 @@ namespace Library
         {
             var takeBook = new TakeBooks();
             takeBook.Show();
+        }
+
+        private void refrenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var reference = new Reference();
+            reference.Show();
         }
     }
 }

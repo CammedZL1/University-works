@@ -67,6 +67,7 @@
             this.addBookToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.addVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.takeBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.refrenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -350,7 +351,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addBookToolStripMenuItem1,
             this.addVisitorToolStripMenuItem,
-            this.takeBookToolStripMenuItem});
+            this.takeBookToolStripMenuItem,
+            this.refrenceToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1196, 24);
@@ -376,6 +378,13 @@
             this.takeBookToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.takeBookToolStripMenuItem.Text = "Take Book";
             this.takeBookToolStripMenuItem.Click += new System.EventHandler(this.takeBookToolStripMenuItem_Click);
+            // 
+            // refrenceToolStripMenuItem
+            // 
+            this.refrenceToolStripMenuItem.Name = "refrenceToolStripMenuItem";
+            this.refrenceToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.refrenceToolStripMenuItem.Text = "Refrence";
+            this.refrenceToolStripMenuItem.Click += new System.EventHandler(this.refrenceToolStripMenuItem_Click);
             // 
             // Books
             // 
@@ -464,6 +473,7 @@
         private System.Windows.Forms.ToolStripMenuItem addBookToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem addVisitorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem takeBookToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem refrenceToolStripMenuItem;
     }
 }
 
